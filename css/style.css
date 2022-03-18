@@ -177,6 +177,10 @@ border: 3px solid #ffffff;
     padding-left: 47px;
 }
 
+.footer-main-container .footer-container .company-section ul li:last-child{
+    text-decoration: underline;
+}
+
 .footer-main-container .footer-container .link-section {
     display: flex;
     flex-direction: column;
