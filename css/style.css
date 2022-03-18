@@ -10,7 +10,7 @@ html {
 /* ===== Scrollbar CSS ===== */
 * {
 scrollbar-width: auto;
-scrollbar-color: #3331af #ffffff;
+scrollbar-color: #3331af transparent;
 }
 
 /* Chrome, Edge, and Safari */
@@ -105,4 +105,114 @@ border: 3px solid #ffffff;
 /* footer */
 .footer-main-container {
     background: #1B2942F0;
+    height: 290px;
+}
+
+.footer-main-container .footer-container {
+    display: flex;
+    color: #fff;
+}
+
+.footer-main-container .footer-container .logo{
+    width: 350px;
+    height: 175.51px;   
+    margin-top: 5px;
+}
+
+.footer-main-container .footer-container .company-section{
+    display: flex;
+    flex-direction: column;
+    padding-top: 41px;
+    margin-left: 115px;
+}
+
+.footer-main-container .footer-container .company-section p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 40px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.footer-main-container .footer-container .company-section ul {
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+}
+
+.footer-main-container .footer-container .company-section ul li:first-child{
+    width: 355px;
+}
+
+.footer-main-container .footer-container .company-section ul li:first-child img{
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.footer-main-container .footer-container .company-section ul li:nth-child(2) img{
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    left: 0;
+    top: 71px;
+}
+
+.footer-main-container .footer-container .company-section ul li:last-child img{
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    left: 0;
+    top: 115px;
+}
+
+.footer-main-container .footer-container .company-section ul li{
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    padding-left: 47px;
+}
+
+.footer-main-container .footer-container .link-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 41px;
+    margin-left: 115px;
+}
+
+.footer-main-container .footer-container .link-section .heading {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 40px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.footer-main-container .footer-container .link-section .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.footer-main-container .footer-container .link-section .link-container {
+    margin-top: 34px;
+}
+
+.footer-main-container .footer-container .link-section .link-container p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 40px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.footer-main-container .footer-container .link-section .link-container .images-container img {
+    width: 40px;
+    height: 40px;
 }
