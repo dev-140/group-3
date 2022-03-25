@@ -8,25 +8,16 @@ html {
 }
 
 /* ===== Scrollbar CSS ===== */
-* {
-scrollbar-width: auto;
-scrollbar-color: #3331af transparent;
-}
-
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-width: 16px;
-}
-
-*::-webkit-scrollbar-track {
-background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-background-color: #7f7de2;
-border-radius: 10px;
-border: 3px solid #ffffff;
-}
+body::-webkit-scrollbar {
+    width: 15px;     
+    background-color: transparent;
+  }
+  body::-webkit-scrollbar-track {
+    background: #46afd8;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #3a0c90;
+  }
 
 /* global */
 .wrapper {
@@ -36,7 +27,7 @@ border: 3px solid #ffffff;
 }
 
 /* header/nav bar */
-.aboutLink.active {
+.nav-main-container .nav-container ul a.active {
     text-decoration: underline !important;
     text-decoration-color: rgba(0, 0, 0, 1);
 }
@@ -186,7 +177,7 @@ border: 3px solid #ffffff;
     display: flex;
     justify-content: center;
     padding: 30px;
-    min-height: 500px;
+    min-height: 1000px;
 }
 
 .team-main-container .team-container {
@@ -425,3 +416,13 @@ border: 3px solid #ffffff;
 @media only screen and (max-width: 768px) {
     
 } */
+
+#mission {
+    margin-top: -100px;
+    position: absolute;
+}
+
+#team {
+    margin-top: -100px;
+    position: absolute;
+}

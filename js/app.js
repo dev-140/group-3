@@ -23,9 +23,31 @@ $(document).ready(function(){
        
     // });
 
-    $(document).on('scroll', function() {
-        if ($(this).scrollTop() >= $('#theTarget').position().top) {
-          console.log('I have been reached');
+    $.fn.isInViewport = function() {
+        var elementTop = $(this).offset().top;
+        var elementBottom = elementTop + $(this).outerHeight();
+    
+        var viewportTop = $(window).scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
+    
+        return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
+
+    $(window).on('resize scroll', function() {
+        if ($('.mission-main-container').isInViewport()) {
+            $('.nav-container ul li a').removeClass('active');
+            $('.aboutLink').addClass('active');
+            
+        } else if ($('.banner-main-container , .item-cards-main-container').isInViewport()) {
+            $('.nav-container ul li a').removeClass('active');
+            $('.homeLink').addClass('active');
+
+        } else if ($('.team-main-container').isInViewport()) {
+            $('.nav-container ul li a').removeClass('active');
+            $('.teamLink').addClass('active');
+
+        } else {
+            $('.nav-container ul li a').removeClass('active');
         }
-    })
+    });  
 });
