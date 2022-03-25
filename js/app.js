@@ -12,7 +12,7 @@ $(document).ready(function(){
     $(window).scroll(function() {
         var height = $(window).scrollTop();
     
-        if(height === 1054) {
+        if(height >= 1054) {
             $('.aboutLink').addClass('active');
         }else{
             $('.aboutLink').removeClass('active');
