@@ -50,4 +50,22 @@ $(document).ready(function(){
             $('.nav-container ul li a').removeClass('active');
         }
     });  
+    setInterval(function () {
+        var beepOne = $('#beep')[0];
+        $('.play-bg-music').on('click' , (e)=> {
+            beepOne.play(); 
+            beepOne.volume = 0.5;
+            $('.play-bg-music').addClass('mute');
+            $('.mute').removeClass('play-bg-music');
+        });
+
+        $('.mute').on('click' , (e)=> {
+            beepOne.volume = 0.5;
+            beepOne.pause(); // Stop playing
+            beepOne.currentTime = 0; // Reset time
+            $('.mute').addClass('play-bg-music');
+            $('.play-bg-music').removeClass('mute');
+        });
+    
+    },);
 });

@@ -144,10 +144,17 @@ body::-webkit-scrollbar {
     flex-direction: column;
     padding: 52px 28px;
     transition: all .2s ease;
+    cursor: pointer;
+    user-select: none;
 }
 
 .item-cards-main-container .item-cards-container .item-cards-wrapper .item-card:hover {
-    margin-top: -10px;
+    margin-top: -40px;
+    transform: rotate(5deg);
+}  
+
+.item-cards-main-container .item-cards-container .item-cards-wrapper .item-card:active {
+    margin-top: -20px;
     transform: rotate(5deg);
 }  
 
@@ -425,4 +432,36 @@ body::-webkit-scrollbar {
 #team {
     margin-top: -100px;
     position: absolute;
+}
+
+.play-bg-music {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background: url(../images/volume-xmark-solid.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 169px;
+    right: 20px;
+    cursor: pointer;
+    background-color: pink;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.mute {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background: url(../images/volume-high-solid.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 169px;
+    right: 20px;
+    cursor: pointer;  
+    background-color: pink;
+    border-radius: 10px;
+    padding: 20px;
 }
