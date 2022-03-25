@@ -30,18 +30,31 @@ border: 3px solid #ffffff;
 
 /* global */
 .wrapper {
-    margin: 0 65px;
+    margin: 0 auto;
+    width: 1200px;
     height: fit-content;
 }
 
 /* header/nav bar */
+.aboutLink.active {
+    text-decoration: underline !important;
+    text-decoration-color: rgba(0, 0, 0, 1);
+}
 .nav-main-container {
-    padding-top: 25px;
+    padding-top: 35px;
     display: flex;
-    position: fixed;
-    top: 0;
     width: 100%;
     background-color: #fff;
+    transition: all .1s ease-in;
+    position: fixed;
+    top: 0;
+}
+
+.nav-main-container.active {
+    padding-top: 25px;
+    box-shadow: 0px 5px 9px 1px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 0px 5px 9px 1px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 5px 9px 1px rgba(0,0,0,0.56);
 }
 
 .nav-main-container .nav-container {
@@ -59,10 +72,7 @@ border: 3px solid #ffffff;
 .nav-main-container .nav-container ul li{
     list-style: none;
     margin-right: 53px;
-}
-
-.nav-main-container .nav-container ul li:first-child{
-    margin-right: 0;
+    height: 100px;
 }
 
 .nav-main-container .nav-container ul li a{
@@ -73,6 +83,8 @@ border: 3px solid #ffffff;
     font-size: 25px;
     line-height: 100px;
     letter-spacing: -0.05em;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 300ms;
 }
 
 .nav-main-container .nav-container ul li:last-child{
@@ -91,9 +103,9 @@ border: 3px solid #ffffff;
 }
 
 .nav-main-container .nav-container ul li .e-tipid-logo{
-    width: 215px;
-    height: 100px;
-    object-fit: cover;
+    width: 89px;
+    height: auto;
+    background-image: url(../images/e-tipid\ logo.png);
 }
 
 /* heading */
@@ -224,3 +236,76 @@ border: 3px solid #ffffff;
 .footer-main-container .footer-container .link-section .link-container .images-container img:nth-child(2) {
     margin: 0 19px;
 }
+
+/* banner */
+.banner-main-container .banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+/* mission */
+.mission-main-container {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(220, 166, 3, 0.79);;
+}
+
+.mission-main-container .mission-container {
+    padding: 53px 0 93px 0;
+}
+
+.mission-main-container .mission-container .mission-text:first-child {
+    margin-bottom: 62px;
+}
+
+.mission-main-container .mission-container .mission-text .heading {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 11px;
+}
+
+.mission-main-container .mission-container .mission-text .content {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: -0.036em;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1200px) {
+    .wrapper {
+        width: 900px;
+    }
+
+    .footer-container {
+        justify-content: space-between;
+    }
+
+    .footer-main-container .footer-container .company-section {
+        margin-left: 0px;
+    }
+
+    .footer-main-container .footer-container .link-section {
+        margin-left: 0px;
+    }
+}
+/* 
+@media only screen and (max-width: 992px) {
+    
+}
+
+@media only screen and (max-width: 768px) {
+    
+} */
