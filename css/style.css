@@ -22,7 +22,8 @@ body::-webkit-scrollbar {
 /* global */
 .wrapper {
     margin: 0 auto;
-    width: 1200px;
+    padding: 0 20px;
+    width: 1160px;
     height: fit-content;
 }
 
@@ -146,11 +147,13 @@ body::-webkit-scrollbar {
     transition: all .2s ease;
     cursor: pointer;
     user-select: none;
+    color: #000 !important;
 }
 
-.item-cards-main-container .item-cards-container .item-cards-wrapper .item-card:hover {
+.item-cards-main-container .item-cards-container .item-cards-wrapper .item-card:hover{
     margin-top: -40px;
     transform: rotate(5deg);
+    background-color: rgb(215, 123, 251);
 }  
 
 .item-cards-main-container .item-cards-container .item-cards-wrapper .item-card:active {
@@ -165,9 +168,9 @@ body::-webkit-scrollbar {
     font-size: 45px;
     line-height: 52px;
     letter-spacing: -0.016em;
-    color: #000;
     text-align: left;
     margin-bottom: 24px;
+    color: #000;
 }
 
 .item-cards-main-container .item-cards-container .item-cards-wrapper .item-card .desc {
