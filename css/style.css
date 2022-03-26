@@ -8,25 +8,16 @@ html {
 }
 
 /* ===== Scrollbar CSS ===== */
-* {
-scrollbar-width: auto;
-scrollbar-color: #3331af transparent;
-}
-
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-width: 16px;
-}
-
-*::-webkit-scrollbar-track {
-background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-background-color: #7f7de2;
-border-radius: 10px;
-border: 3px solid #ffffff;
-}
+body::-webkit-scrollbar {
+    width: 15px;     
+    background-color: transparent;
+  }
+  body::-webkit-scrollbar-track {
+    background: #46afd8;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #3a0c90;
+  }
 
 /* global */
 .wrapper {
@@ -36,7 +27,7 @@ border: 3px solid #ffffff;
 }
 
 /* header/nav bar */
-.aboutLink.active {
+.nav-main-container .nav-container ul a.active {
     text-decoration: underline !important;
     text-decoration-color: rgba(0, 0, 0, 1);
 }
@@ -153,10 +144,17 @@ border: 3px solid #ffffff;
     flex-direction: column;
     padding: 52px 28px;
     transition: all .2s ease;
+    cursor: pointer;
+    user-select: none;
 }
 
 .item-cards-main-container .item-cards-container .item-cards-wrapper .item-card:hover {
-    margin-top: -10px;
+    margin-top: -40px;
+    transform: rotate(5deg);
+}  
+
+.item-cards-main-container .item-cards-container .item-cards-wrapper .item-card:active {
+    margin-top: -20px;
     transform: rotate(5deg);
 }  
 
@@ -186,7 +184,7 @@ border: 3px solid #ffffff;
     display: flex;
     justify-content: center;
     padding: 30px;
-    min-height: 500px;
+    min-height: 1000px;
 }
 
 .team-main-container .team-container {
@@ -425,3 +423,45 @@ border: 3px solid #ffffff;
 @media only screen and (max-width: 768px) {
     
 } */
+
+#mission {
+    margin-top: -100px;
+    position: absolute;
+}
+
+#team {
+    margin-top: -100px;
+    position: absolute;
+}
+
+.play-bg-music {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background: url(../images/volume-xmark-solid.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 169px;
+    right: 20px;
+    cursor: pointer;
+    background-color: pink;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.mute {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background: url(../images/volume-high-solid.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 169px;
+    right: 20px;
+    cursor: pointer;  
+    background-color: pink;
+    border-radius: 10px;
+    padding: 20px;
+}
