@@ -11,13 +11,13 @@ html {
 body::-webkit-scrollbar {
     width: 15px;     
     background-color: transparent;
-  }
-  body::-webkit-scrollbar-track {
-    background: #46afd8;
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: #3a0c90;
-  }
+}
+body::-webkit-scrollbar-track {
+background: #46afd8;
+}
+body::-webkit-scrollbar-thumb {
+background-color: #3a0c90;
+}
 
 /* global */
 .wrapper {
