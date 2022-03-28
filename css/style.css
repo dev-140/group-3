@@ -8,25 +8,17 @@ html {
 }
 
 /* ===== Scrollbar CSS ===== */
-* {
-scrollbar-width: auto;
-scrollbar-color: #3331af transparent;
+body::-webkit-scrollbar {
+    width: 15px;     
+    background-color: transparent;
+}
+body::-webkit-scrollbar-track {
+background: #46afd8;
+}
+body::-webkit-scrollbar-thumb {
+background-color: #3a0c90;
 }
 
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-width: 16px;
-}
-
-*::-webkit-scrollbar-track {
-background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-background-color: #7f7de2;
-border-radius: 10px;
-border: 3px solid #ffffff;
-}
 
 /* global */
 .wrapper {
