@@ -9,23 +9,27 @@ $(document).ready(function(){
         }
     });
 
-    // $(window).scroll(function() {
-    //     var height = $(window).scrollTop();
-    //     var aboutLinkTop = $('.aboutLink').offset().top;
-    
-    //     if(height >= 1186) {
-    //         $('.aboutLink').addClass('active');
-    //     }else{
-    //         $('.aboutLink').removeClass('active');
-    //     }
-        
-    //     console.log(aboutLinkTop);
-       
-    // });
-
     $(document).on('scroll', function() {
         if ($(this).scrollTop() >= $('#theTarget').position().top) {
           console.log('I have been reached');
         }
     })
+
+    $('.contact-btn').on('click', (e)=> {
+        $('.contact-pop-up-modal-main-container').addClass('active');
+        $('.contact-pop-up-modal-main-container').removeClass('oppacity');
+        setTimeout(() => { 
+            $('.contact-pop-up-modal-container').addClass('active');
+        }, 1);
+        $('body').css('overflow', 'hidden');
+    });
+
+    $('.contact-close-btn , .submit-btn').on('click', (e)=> {
+        setTimeout(() => { 
+            $('.contact-pop-up-modal-main-container').removeClass('active');
+        }, 100);
+        $('.contact-pop-up-modal-main-container').addClass('oppacity');
+        $('.contact-pop-up-modal-container').removeClass('active');
+        $('body').css('overflow', 'visible');
+    });
 });
