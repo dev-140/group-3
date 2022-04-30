@@ -68,6 +68,7 @@ $(document).ready(function(){
         });
     
     },);
+    
     $(document).on('scroll', function() {
         if ($(this).scrollTop() >= $('#theTarget').position().top) {
           console.log('I have been reached');
