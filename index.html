@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <title>Alpha</title>
-
     <!-- links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -19,11 +19,15 @@
     <div class="nav-main-container">
         <div class="wrapper">
             <div class="nav-container">
+                <div class="logo-container">
+                    <img src="./images/new-logo.png" alt="">
+                </div>
                 <ul>
-                    <li><img class="e-tipid-logo" src="/images/e-tipid logo.png" alt="e tipid logo"></li>
                     <li><a class="homeLink" href="#">Home</a></li>
                     <li><a class="aboutLink" href="#mission">About</a></li>
                     <li><a class="teamLink" href="#team">Team</a></li>
+                    <li><a class="teamLink" href="#mission">Mission</a></li>
+                    <li><a class="teamLink" href="#mission">Vision</a></li>
                     <li class="contact-btn contact-link">Contact Us</li>
                 </ul>
             </div>
@@ -34,7 +38,15 @@
     <div class="banner-main-container">
         <div class="wrapper">
             <div class="banner-container">
-                <h1>Make more time for the work that matters the most</h1>
+                <div class="section-one">
+                    <h1 class="heading">WELCOME TO <span class="text-d">E-NODE <br> COMPANY</span></h1>
+                    <p class="sub-desc">"Your partner towards financial stability"</p>
+                    <div class="contact-btn-global">Contact Us</div>
+                </div>
+
+                <div class="section-two">
+                    <img src="./images/image-banner.png" alt="" class="image-banner">
+                </div>
             </div>
         </div>
     </div>
@@ -42,28 +54,54 @@
     <div class="item-cards-main-container">
         <div class="wrapper">
             <div class="item-cards-container">
-                <h4 class="heading">Save your time on planning, budgeting, and monitoring your expense.</h4>
+                <h4 class="heading">Our Work</h4>
+                <p class="sub-desc">We provide applications and services that cater to the needs of people both new and experienced in the world of financing.</p> 
 
-                <div class="item-cards-wrapper">
-                    <div class="item-card">
-                        <p class="heading">Budget planner</p>
-                        <p class="desc">
-                            Say goodbye to spreadsheets with customizable budgets. Easily add and update your categories.
-                        </p>
+                <div class="about-info-section">
+                    <div class="section-one">
+                        <img src="./images/about-section-image-banner.PNG" alt="" class="section-image">
                     </div>
 
-                    <div class="item-card">
-                        <p class="heading">Track your spending</p>
-                        <p class="desc">
-                            Stay on top of your finances by seeing where your money comes and goes.
-                        </p>
+                    <div class="section-two">
+                        <img src="./images/e-tipid-text-logo.PNG" alt="">
+                        <h2 class="heading">About</h2>
+                        <p class="desc">electronic Tipid or e-Tipid is a simple and fast alternative to feature-rich, complex budget planner / personal finance apps. There are no categories to manage, no charts to interpret and no learning curve.</p>
+                        <div class="global-btn">Visit Website</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-us-container-main-container">
+        <div id="mission"></div> <!-- link for navigation-->
+        <div class="wrapper">
+            <div class="about-container">
+                <div class="section-one">
+                    <h2 class="heading">About  Us</h2>
+                    <p class="desc">As a developer of e-Node, we will make it possible to produce the most useful app that can bring better quality to society that will be beneficial for everyone.</p>
+                </div>
+
+                <div class="section-two">
+                    <div class="mission-vision-container">
+                        <div class="section-container">
+                            <h3 class="section-heading">Who we are</h3>
+                            <p class="section-content">e-Node company can be seen as a company with imaginative and analytical workers that has a clear and concise goal to steer individuals to a better future whether it be financially or in other aspects. Each and every employee strives to do their best to create various applications to make an impact to our society</p>
+                        </div>
+
+                        <div class="section-container">
+                            <h3 class="section-heading">Who we are</h3>
+                            <p class="section-content">e-Node company can be seen as a company with imaginative and analytical workers that has a clear and concise goal to steer individuals to a better future whether it be financially or in other aspects. Each and every employee strives to do their best to create various applications to make an impact to our society</p>
+                        </div>
+
+                        <div class="section-container">
+                            <h3 class="section-heading">Who we are</h3>
+                            <p class="section-content">e-Node company can be seen as a company with imaginative and analytical workers that has a clear and concise goal to steer individuals to a better future whether it be financially or in other aspects. Each and every employee strives to do their best to create various applications to make an impact to our society</p>
+                        </div>
                     </div>
 
-                    <div class="item-card">
-                        <p class="heading">Credit monitoring</p>
-                        <p class="desc">
-                            Get 24/7 access to your score for free. Plus, we'll let you know of any important changes on your report.
-                        </p>
+                    <div class="image-container">
+                        <img src="./images/about-us-team-photo.PNG" alt="" class="team-photo">
                     </div>
                 </div>
             </div>
@@ -136,12 +174,6 @@
 
     <div class="copyright">
         <p>© E-Node Services Group, Inc. All Rights Reserved.</p>
-    </div>
-
-    <div class="play-bg-music">
-        <audio id="beep" preload="auto" loop>
-            <source src="/sound/Like A Dino!.mp3"> 
-        </audio>
     </div>
     
     <div class="contact-pop-up-modal-main-container">
