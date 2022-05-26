@@ -784,6 +784,11 @@ background-color: #3a0c90;
     padding: 20px;
 }
 
+.logo-ni-jj {
+    width: 150px;
+    height: auto;
+}
+
 .mute {
     height: 50px;
     width: 50px;
@@ -1121,6 +1126,14 @@ background-color: #3a0c90;
     .footer-main-container .footer-container .logo {
         height: auto;
         width: 100%;
+    }
+
+    .nav-main-container .nav-container {
+        align-items: center;
+    }
+
+    .logo-ni-jj {
+        width: 94px;
     }
 
     .banner-main-container {
