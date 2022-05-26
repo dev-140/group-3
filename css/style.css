@@ -64,18 +64,6 @@ background-color: #3a0c90;
     padding-left: 0;
 }
 
-.close-nav {
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    right: 28px;
-    top: 15px;
-}
-
-.close-nav, .menu {
-    display: none;
-}
-
 .nav-main-container .nav-container ul li{
     list-style: none;
     margin-right: 53px;
@@ -91,14 +79,7 @@ background-color: #3a0c90;
     text-decoration: none;
 }
 
-.nav-main-container .nav-container ul li.contact-link{
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 2px;
-    color: #FFFFFF;
+.nav-main-container .nav-container ul li:last-child{
     background: #1ABA00;
     border-radius: 10px;
     height: 53px;
@@ -108,6 +89,16 @@ background-color: #3a0c90;
     align-items: center;
     cursor: pointer;
     margin-right: 0;
+}
+
+.nav-main-container .nav-container ul li.contact-link{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
 }
 
 .contact-btn-global {
@@ -238,7 +229,6 @@ background-color: #3a0c90;
     width: 100%;
     margin-top: 21px;
     display: flex;
-    padding: 20px;
 }
 
 .item-cards-main-container .item-cards-container .about-info-section .section-one {
@@ -275,7 +265,7 @@ background-color: #3a0c90;
     line-height: 26px;
     text-align: justify;
     color: #8A8A8A;
-    width: 80%;
+    width: 90%;
     margin-bottom: 50px;
 }
 
@@ -477,6 +467,10 @@ background-color: #3a0c90;
     margin-top: 76px;
 }
 
+.team-main-container .team-container .member-card-container .card-row {
+    gap: 10px;
+}
+
 .team-main-container .team-container .member-card-container .card-row .member-card {
     width: 241px;
     height: 303px;
@@ -488,6 +482,7 @@ background-color: #3a0c90;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 10px;
 }
 
 .team-main-container .team-container .member-card-container .card-row .member-card .member-pic {
@@ -505,6 +500,7 @@ background-color: #3a0c90;
     line-height: 31px;
     letter-spacing: 0.014em;
     color: #1ABA00;
+    text-align: center;
 }
 
 .team-main-container .team-container .member-card-container .card-row {
@@ -552,6 +548,12 @@ background-color: #3a0c90;
 .footer-main-container {
     background: #1B2942F0;
     height: 290px;
+}
+
+.footer-main-container .wrapper {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 .footer-main-container .footer-container {
@@ -730,7 +732,7 @@ background-color: #3a0c90;
 
 @media only screen and (max-width: 1200px) {
     .wrapper {
-        max-width: 900px;
+        width: 900px;
     }
 
     .footer-container {
@@ -782,11 +784,6 @@ background-color: #3a0c90;
     background-color: pink;
     border-radius: 10px;
     padding: 20px;
-}
-
-.logo-ni-jj {
-    width: 150px;
-    height: auto;
 }
 
 .mute {
@@ -973,179 +970,4 @@ background-color: #3a0c90;
 .contact-close-btn .close {
     height: 50px;
     width: 50px;
-}
-
-
-/* responsive */
-
-@media only screen and (max-width: 1250px) {
-    .item-cards-main-container .item-cards-container .about-info-section .section-one .section-image {
-        height: 300px;
-        width: 300px;
-    }
-
-    .item-cards-main-container .item-cards-container .about-info-section {
-        align-items: center;
-        flex-direction: column;
-        padding: 20px 0;
-    }
-
-    .item-cards-main-container .item-cards-container .about-info-section .section-two {
-        margin-left: 0;
-        align-items: center;
-    }
-
-    .item-cards-main-container .item-cards-container .about-info-section .section-two .desc {
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .about-us-container-main-container .about-container .section-two {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .about-us-container-main-container .about-container .section-two .image-container {
-        width: 100%;
-    }
-
-    .about-us-container-main-container .about-container .section-two .mission-vision-container {
-        width: 100%;
-    }
-
-    .footer-main-container {
-        height: auto;
-    }
-
-    .footer-main-container .footer-container {
-        flex-direction: column;
-        padding-bottom: 30px;
-    }
-
-    .nav-main-container .wrapper  {
-        width: 100%;
-        padding: 0 50px;
-    }
-
-    .banner-main-container .banner-container {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .banner-main-container .banner-container .section-two {
-        width: 100%;
-        padding-top: 30px;
-    }
-
-    .banner-main-container .banner-container .section-two .image-banner {
-        width: 500px;
-    }
-
-    .banner-main-container .banner-container .section-one {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } 
-
-    .banner-main-container .banner-container .section-one .heading {
-        text-align: center;
-    }
-}
-
-@media only screen and (max-width: 890px) {
-    .wrapper {
-        padding: 0 20px;
-    }
-
-    .banner-main-container .banner-container .section-two .image-banner {
-        width: 100%;
-    }
-
-    .banner-main-container .banner-container .section-one .heading {
-        font-size: 30px;
-        line-height: 32px;
-    }
-
-    .banner-main-container .banner-container .section-one .sub-desc {
-        font-size: 20px;
-        line-height: 26px;
-        margin-bottom: 12px;
-    }
-
-    .nav-main-container .nav-container ul {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        padding-left: 0;
-        position: absolute;
-        height: 100vh;
-        background-color: beige;
-        padding-top: 40px;
-        box-sizing: border-box;
-        width: 100vw;
-        left: 0;
-        top: 0;
-    }
-
-    .about-us-container-main-container .about-container .section-one .desc {
-        width: 90%;
-    }
-
-    .close-nav, .menu {
-        display: block;
-    }
-
-    .nav-main-container .nav-container ul.active {
-        display: flex;
-    }
-
-    .nav-main-container .nav-container ul li.contact-link {
-        margin-left: 0;
-    }
-
-    .nav-main-container .nav-container ul li {
-        margin-right: 0;
-        margin-top: 20px;
-    }
-
-    .menu {
-        height: 30px;
-        width: 30px;
-    }
-
-    .contact-pop-up-modal-main-container .contact-pop-up-modal-container .form-container .row {
-        flex-flow: column;
-    }
-
-    .contact-pop-up-modal-main-container .contact-pop-up-modal-container .form-container .row .form input {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 420px) {
-    .footer-main-container .footer-container .logo {
-        height: auto;
-        width: 100%;
-    }
-
-    .nav-main-container .nav-container {
-        align-items: center;
-    }
-
-    .logo-ni-jj {
-        width: 94px;
-    }
-
-    .banner-main-container {
-        height: 100vh;
-    }
-
-    .footer-main-container .footer-container .company-section ul li:first-child {
-        width: 100%;
-    }
-
-    .mission-main-container .mission-container .mission-text .heading {
-        font-size: 30px;
-        line-height: 31px;
-    }
 }
