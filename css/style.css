@@ -23,7 +23,7 @@ background-color: #3a0c90;
 /* global */
 .wrapper {
     margin: 0 auto;
-    padding: 0 300px;
+    padding: 0 200px;
     width: 100%;
 }
 
@@ -958,4 +958,57 @@ background-color: #3a0c90;
 .contact-close-btn .close {
     height: 50px;
     width: 50px;
+}
+
+
+/* responsive */
+
+@media only screen and (max-width: 1024px) {
+    .item-cards-main-container .item-cards-container .about-info-section .section-one .section-image {
+        height: 300px;
+        width: 300px;
+    }
+
+    .item-cards-main-container .item-cards-container .about-info-section {
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .item-cards-main-container .item-cards-container .about-info-section .section-two {
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .item-cards-main-container .item-cards-container .about-info-section .section-two .desc {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .about-us-container-main-container .about-container .section-two {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .about-us-container-main-container .about-container .section-two .image-container {
+        width: 100%;
+    }
+
+    .about-us-container-main-container .about-container .section-two .mission-vision-container {
+        width: 100%;
+    }
+
+    .footer-main-container {
+        height: auto;
+    }
+
+    .footer-main-container .footer-container {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .nav-main-container .wrapper  {
+        width: 100%;
+        padding: 0 50px;
+    }
 }
