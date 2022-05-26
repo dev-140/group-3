@@ -23,7 +23,7 @@ background-color: #3a0c90;
 /* global */
 .wrapper {
     margin: 0 auto;
-    padding: 0 200px;
+    padding: 0 300px;
     width: 100%;
 }
 
@@ -265,7 +265,7 @@ background-color: #3a0c90;
     line-height: 26px;
     text-align: justify;
     color: #8A8A8A;
-    width: 90%;
+    width: 80%;
     margin-bottom: 50px;
 }
 
