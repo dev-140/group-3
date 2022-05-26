@@ -19,23 +19,23 @@ $(document).ready(function(){
     //     return elementBottom > viewportTop && elementTop < viewportBottom;
     // };
 
-    $(window).on('resize scroll', function() {
-        if ($('.mission-main-container').isInViewport()) {
-            $('.nav-container ul li a').removeClass('active');
-            $('.aboutLink').addClass('active');
+    // $(window).on('resize scroll', function() {
+    //     if ($('.mission-main-container').isInViewport()) {
+    //         $('.nav-container ul li a').removeClass('active');
+    //         $('.aboutLink').addClass('active');
             
-        } else if ($('.banner-main-container , .item-cards-main-container').isInViewport()) {
-            $('.nav-container ul li a').removeClass('active');
-            $('.homeLink').addClass('active');
+    //     } else if ($('.banner-main-container , .item-cards-main-container').isInViewport()) {
+    //         $('.nav-container ul li a').removeClass('active');
+    //         $('.homeLink').addClass('active');
 
-        } else if ($('.team-main-container').isInViewport()) {
-            $('.nav-container ul li a').removeClass('active');
-            $('.teamLink').addClass('active');
+    //     } else if ($('.team-main-container').isInViewport()) {
+    //         $('.nav-container ul li a').removeClass('active');
+    //         $('.teamLink').addClass('active');
 
-        } else {
-            $('.nav-container ul li a').removeClass('active');
-        }
-    });  
+    //     } else {
+    //         $('.nav-container ul li a').removeClass('active');
+    //     }
+    // });  
     
     $('.contact-btn').on('click', (e)=> {
         $('.contact-pop-up-modal-main-container').addClass('active');
@@ -53,5 +53,9 @@ $(document).ready(function(){
         $('.contact-pop-up-modal-main-container').addClass('oppacity');
         $('.contact-pop-up-modal-container').removeClass('active');
         $('body').css('overflow', 'visible');
+    });
+
+    $('.menu, .close-nav, .nav-main-container .nav-container ul li').on('click', (e)=> {
+        $('.nav-main-container .nav-container ul').toggleClass('active');
     });
 });
