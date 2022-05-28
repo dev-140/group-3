@@ -54,4 +54,8 @@ $(document).ready(function(){
         $('.contact-pop-up-modal-container').removeClass('active');
         $('body').css('overflow', 'visible');
     });
+
+    $('.menu, .close-nav, .nav-main-container .nav-container ul li').on('click', (e)=> {
+        $('.nav-main-container .nav-container ul').toggleClass('active');
+    });
 });
