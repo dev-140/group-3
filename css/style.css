@@ -27,10 +27,6 @@ background-color: #3a0c90;
     width: 100%;
 }
 
-.close-nav, .menu {
-    display: none;
-}
-
 /* header/nav bar */
 .nav-main-container .nav-container ul a.active {
     text-decoration: underline !important;
@@ -68,6 +64,18 @@ background-color: #3a0c90;
     padding-left: 0;
 }
 
+.close-nav {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 28px;
+    top: 15px;
+}
+
+.close-nav, .menu {
+    display: none;
+}
+
 .nav-main-container .nav-container ul li{
     list-style: none;
     margin-right: 53px;
@@ -81,18 +89,6 @@ background-color: #3a0c90;
     letter-spacing: 0.1em;
     color: #8A8A8A;
     text-decoration: none;
-}
-
-.nav-main-container .nav-container ul li:last-child{
-    background: #1ABA00;
-    border-radius: 10px;
-    height: 53px;
-    width: 154px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin-right: 0;
 }
 
 .nav-main-container .nav-container ul li.contact-link{
@@ -112,12 +108,6 @@ background-color: #3a0c90;
     align-items: center;
     cursor: pointer;
     margin-right: 0;
-}
-
-.logo-container img {
-    height: 50px;
-    width: auto;
-    cursor: pointer;
 }
 
 .contact-btn-global {
@@ -248,6 +238,7 @@ background-color: #3a0c90;
     width: 100%;
     margin-top: 21px;
     display: flex;
+    padding: 20px;
 }
 
 .item-cards-main-container .item-cards-container .about-info-section .section-one {
@@ -284,7 +275,7 @@ background-color: #3a0c90;
     line-height: 26px;
     text-align: justify;
     color: #8A8A8A;
-    width: 90%;
+    width: 80%;
     margin-bottom: 50px;
 }
 
@@ -486,10 +477,6 @@ background-color: #3a0c90;
     margin-top: 76px;
 }
 
-.team-main-container .team-container .member-card-container .card-row {
-    gap: 10px;
-}
-
 .team-main-container .team-container .member-card-container .card-row .member-card {
     width: 241px;
     height: 303px;
@@ -501,7 +488,6 @@ background-color: #3a0c90;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
 }
 
 .team-main-container .team-container .member-card-container .card-row .member-card .member-pic {
@@ -519,7 +505,6 @@ background-color: #3a0c90;
     line-height: 31px;
     letter-spacing: 0.014em;
     color: #1ABA00;
-    text-align: center;
 }
 
 .team-main-container .team-container .member-card-container .card-row {
@@ -731,10 +716,6 @@ background-color: #3a0c90;
     text-align: center;
 }
 
-.copyright a {
-    color: #fff;
-}
-
 /* mission */
 .mission-main-container {
     width: 100%;
@@ -774,6 +755,10 @@ background-color: #3a0c90;
 }
 
 @media only screen and (max-width: 1200px) {
+    .wrapper {
+        max-width: 900px;
+    }
+
     .footer-container {
         justify-content: space-between;
     }
@@ -823,6 +808,11 @@ background-color: #3a0c90;
     background-color: pink;
     border-radius: 10px;
     padding: 20px;
+}
+
+.logo-ni-jj {
+    width: 150px;
+    height: auto;
 }
 
 .mute {
@@ -1034,86 +1024,6 @@ background-color: #3a0c90;
     align-items: center;
 }
 
-.cookie-cotainer p {
-    color: #fff;
-    width: 70%;
-}
-
-.cookie-cotainer .btn-container {
-    display: flex;
-    width: 22%;
-    justify-content: space-between;
-}
-
-.cookie-cotainer .btn-container span {
-    color: #fff;
-    padding: 10px;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.cookie-cotainer .btn-container span:nth-child(2) {
-    color: #fff;
-    text-decoration: none;
-    background-color: #1ABA00;
-    white-space: nowrap;
-}
-
-/* privacy */
-.privacy-main-container {
-    margin-top: 114px;
-    min-height: 100vh;
-}
-
-.privacy-main-container .wrapper {
-    width: 80%;
-}
-
-.privacy-container {
-    height: 100%;
-}
-
-.privacy-container .title {
-    color: #818080;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
-    margin-top: 20px;
-}
-
-.privacy-container .section {
-    font-family: 'Poppins';
-    color: #818080;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    padding-left: 10px;
-    text-decoration: underline;
-    margin-top: 10px;
-}
-
-.privacy-container .section-content {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 45px;
-    color: #000;
-    padding-left: 30px;
-    margin-top: 10px;
-}
-
-.privacy-container .section-content .bold {
-    font-weight: bold;
-}
-
-.privacy-container .section-content .bold::before {
-    content: '•';
-    padding-right: 10px;
-}
 
 /* responsive */
 
@@ -1121,30 +1031,6 @@ background-color: #3a0c90;
     .item-cards-main-container .item-cards-container .about-info-section .section-one .section-image {
         height: 300px;
         width: 300px;
-    }
-
-    .team-main-container .team-container .member-card-container .card-row .member-card {
-        transform: scale(0.9);
-    }
-
-    .team-main-container .team-container .member-card-container .card-row:first-child {
-        width: 100%;
-    }
-
-    .team-main-container .team-container .member-card-container .card-row:first-child > div:first-child {
-        width: 100%;
-    }
-
-    .team-main-container .team-container .member-card-container .card-row .member-card .member-pic {
-        width: 90px;
-    }
-
-    .team-main-container .team-container .member-card-container .card-row {
-        width: 100%;
-        gap: 0;
-        margin-bottom: 0;
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
     .item-cards-main-container .item-cards-container .about-info-section {
@@ -1216,30 +1102,8 @@ background-color: #3a0c90;
 }
 
 @media only screen and (max-width: 890px) {
-    
     .wrapper {
         padding: 0 20px;
-    }
-
-    .team-main-container .team-container .heading {
-        font-size: 42px;
-    }
-
-    .team-main-container .team-container {
-        width: 100%;
-    }
-
-    .team-main-container .team-container .member-card-container {
-        margin-top: 30px;
-    }
-
-    .team-main-container .team-container .member-card-container .card-row .member-card {
-        transform: scale(1);
-        margin-top: 10px;
-    }
-
-    .team-main-container {
-        padding-bottom: 50px;
     }
 
     .banner-main-container .banner-container .section-two .image-banner {
@@ -1280,14 +1144,6 @@ background-color: #3a0c90;
         display: block;
     }
 
-    .close-nav {
-        position: absolute;
-        height: 30px;
-        width: auto;
-        top: 30px;
-        right: 30px;
-    }
-
     .nav-main-container .nav-container ul.active {
         display: flex;
     }
@@ -1313,57 +1169,12 @@ background-color: #3a0c90;
     .contact-pop-up-modal-main-container .contact-pop-up-modal-container .form-container .row .form input {
         width: 100%;
     }
-
-    .footer-information-section {
-        flex-direction: column;
-    }
-
-    .footer-information-section > div {
-        margin-bottom: 30px;
-    }
 }
 
 @media only screen and (max-width: 420px) {
     .footer-main-container .footer-container .logo {
         height: auto;
         width: 100%;
-    }
-
-    .contact-pop-up-modal-main-container .contact-pop-up-modal-container .form-container .row .form label {
-        margin-bottom: 0;
-    }
-
-    .contact-pop-up-modal-main-container .contact-pop-up-modal-container .heading {
-        font-size: 16px;
-    }
-
-    .contact-pop-up-modal-main-container .contact-pop-up-modal-container .sub-desc {
-        font-size: 16px;
-    }
-
-    .contact-pop-up-modal-main-container .contact-pop-up-modal-container .form-container .row .form .message-input {
-        height: 83px;
-    }
-    
-    .submit-btn {
-        width: 180px;
-        height: 40px; 
-    }
-    
-    .contact-close-btn {
-        height: 22px;
-        width: 22px;
-        top: 5px;
-        right: 5px;
-    }
-
-    .contact-pop-up-modal-main-container .contact-pop-up-modal-container {
-        padding-top: 30px;
-    } 
-
-    .contact-close-btn .close {
-        height: 22px;
-        width: 22px;
     }
 
     .nav-main-container .nav-container {
@@ -1376,7 +1187,6 @@ background-color: #3a0c90;
 
     .banner-main-container {
         height: 100vh;
-        margin-top: 0;
     }
 
     .footer-main-container .footer-container .company-section ul li:first-child {
