@@ -37,7 +37,7 @@ $(document).ready(function(){
         }
     });  
     
-    $('.contact-btn').on('click', (e)=> {
+    $('.contact-btn, .contact-btn-global').on('click', (e)=> {
         $('.contact-pop-up-modal-main-container').addClass('active');
         $('.contact-pop-up-modal-main-container').removeClass('oppacity');
         setTimeout(() => { 
@@ -46,13 +46,15 @@ $(document).ready(function(){
         $('body').css('overflow', 'hidden');
     });
 
-    $('.contact-close-btn , .submit-btn').on('click', (e)=> {
+    $('.contact-close-btn, .submit-btn').on('click', (e)=> {
         setTimeout(() => { 
             $('.contact-pop-up-modal-main-container').removeClass('active');
         }, 100);
         $('.contact-pop-up-modal-main-container').addClass('oppacity');
         $('.contact-pop-up-modal-container').removeClass('active');
         $('body').css('overflow', 'visible');
+
+        $('.form input, .form textarea').val('');
     });
 
     $('.menu, .close-nav, .nav-main-container .nav-container ul li').on('click', (e)=> {
