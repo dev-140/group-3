@@ -61,8 +61,8 @@ $(document).ready(function(){
         $('.nav-main-container .nav-container ul').toggleClass('active');
     });
 
-    // $('body').css('overflow', 'hidden');
-    $('.cookie-wrapper').remove();
+    $('body').css('overflow', 'hidden');
+
     $('.close-cookie').on('click', (e)=> {
         $('.cookie-wrapper').remove();
         $('body').css('overflow', 'visible');
