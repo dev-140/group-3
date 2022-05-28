@@ -60,4 +60,11 @@ $(document).ready(function(){
     $('.menu, .close-nav, .nav-main-container .nav-container ul li').on('click', (e)=> {
         $('.nav-main-container .nav-container ul').toggleClass('active');
     });
+
+    $('body').css('overflow', 'hidden');
+
+    $('.close-cookie').on('click', (e)=> {
+        $('.cookie-wrapper').remove();
+        $('body').css('overflow', 'visible');
+    });
 });
