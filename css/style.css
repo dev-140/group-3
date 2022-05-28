@@ -1218,6 +1218,37 @@ background-color: #3a0c90;
         width: 100%;
     }
 
+    .contact-pop-up-modal-main-container .contact-pop-up-modal-container .form-container .row .form label {
+        margin-bottom: 0;
+    }
+
+    .contact-pop-up-modal-main-container .contact-pop-up-modal-container .heading {
+        font-size: 16px;
+    }
+
+    .contact-pop-up-modal-main-container .contact-pop-up-modal-container .sub-desc {
+        font-size: 16px;
+    }
+
+    .contact-pop-up-modal-main-container .contact-pop-up-modal-container .form-container .row .form .message-input {
+        height: 83px;
+    }
+    
+    .submit-btn {
+        width: 180px;
+        height: 40px; 
+    }
+    
+    .contact-close-btn {
+        height: 30px;
+        width: 30px;
+    }
+
+    .contact-close-btn .close {
+        height: 30px;
+        width: 30px;
+    }
+
     .nav-main-container .nav-container {
         align-items: center;
     }
