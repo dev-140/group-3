@@ -1059,6 +1059,62 @@ background-color: #3a0c90;
     white-space: nowrap;
 }
 
+/* privacy */
+.privacy-main-container {
+    margin-top: 114px;
+    min-height: 100vh;
+}
+
+.privacy-main-container .wrapper {
+    width: 80%;
+}
+
+.privacy-container {
+    height: 100%;
+}
+
+.privacy-container .title {
+    color: #818080;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 20px;
+}
+
+.privacy-container .section {
+    font-family: 'Poppins';
+    color: #818080;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 10px;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.privacy-container .section-content {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 45px;
+    color: #000;
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+.privacy-container .section-content .bold {
+    font-weight: bold;
+}
+
+.privacy-container .section-content .bold::before {
+    content: '•';
+    padding-right: 10px;
+}
+
 /* responsive */
 
 @media only screen and (max-width: 1250px) {
