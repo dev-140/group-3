@@ -868,6 +868,7 @@ background-color: #3a0c90;
     max-width: 557px;
     margin: auto;
     padding: 20px;
+    padding-top: 40px;
     transition: all 0.2s ease-in-out;
     transform: scale(0.5);
     opacity: 0;
@@ -992,17 +993,17 @@ background-color: #3a0c90;
 }
 
 .contact-close-btn {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 5px;
+    right: 5px;
     cursor: pointer;
 }
 
 .contact-close-btn .close {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
 }
 
 /* responsive */
@@ -1106,6 +1107,7 @@ background-color: #3a0c90;
 }
 
 @media only screen and (max-width: 890px) {
+    
     .wrapper {
         padding: 0 20px;
     }
@@ -1240,13 +1242,19 @@ background-color: #3a0c90;
     }
     
     .contact-close-btn {
-        height: 30px;
-        width: 30px;
+        height: 22px;
+        width: 22px;
+        top: 5px;
+        right: 5px;
     }
 
+    .contact-pop-up-modal-main-container .contact-pop-up-modal-container {
+        padding-top: 30px;
+    } 
+
     .contact-close-btn .close {
-        height: 30px;
-        width: 30px;
+        height: 22px;
+        width: 22px;
     }
 
     .nav-main-container .nav-container {
