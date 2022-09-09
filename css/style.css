@@ -32,6 +32,11 @@ background-color: #3a0c90;
     text-decoration: underline !important;
     text-decoration-color: rgba(0, 0, 0, 1);
 }
+
+.nav-main-container .nav-container img {
+    width: 120px
+}
+
 .nav-main-container {
     padding-top: 35px;
     display: flex;
