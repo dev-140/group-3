@@ -57,6 +57,11 @@ background-color: #3a0c90;
     justify-content: space-between;
 }
 
+.nav-main-container .nav-container img {
+    height: 50px;
+    width: 120px;
+}
+
 .nav-main-container .nav-container ul {
     display: flex;
     flex-direction: row;
